@@ -57,7 +57,8 @@ jobs:
           node-version: 20
 
       - name: Install NPM dependencies
-        run: npm ci
+        run: npm install --legacy-peer-deps
+
 
       - name: Build Vite assets
         run: npm run build
